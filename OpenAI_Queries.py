@@ -159,8 +159,14 @@ try:
     {question} will be replaced with the user's question.
         """
 
-# Display the image in the sidebar with a width of 200 pixels and adjust the position
-    st.sidebar.image(os.path.join('images', 'hsbc.png'), width=200, use_container_width=False, style="margin-top: 0px;")
+    st.sidebar.markdown(
+    """
+    <div style="text-align: center; margin-top: 10px;">
+        <img src="images/hsbc.png" alt="HSBC Logo" width="200">
+    </div>
+    """,
+    unsafe_allow_html=True,
+)
 
 
 
