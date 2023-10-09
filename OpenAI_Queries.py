@@ -159,9 +159,10 @@ try:
     {question} will be replaced with the user's question.
         """
 
-    col1, col2, col3 = st.columns([1,2,1])
-    with col1:
-        st.image(os.path.join('images','hsbc.png'))
+    # Display the image in the sidebar with a width of 200 pixels
+    st.sidebar.image(os.path.join('images', 'hsbc.png'), width=200)
+
+
 
     col1, col2, col3 = st.columns([2,2,2])
     with col1:
