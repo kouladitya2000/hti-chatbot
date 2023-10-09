@@ -159,16 +159,8 @@ try:
     {question} will be replaced with the user's question.
         """
 
-    st.sidebar.markdown(
-    """
-    <div style="text-align: center; margin-top: 10px;">
-        <img src="images/hsbc.png" alt="HSBC Logo" width="200">
-    </div>
-    """,
-    unsafe_allow_html=True,
-)
-
-
+    # Display the image in the sidebar
+    st.sidebar.image(os.path.join('images', 'hsbc.png'))
 
 
     col1, col2, col3 = st.columns([2,2,2])
