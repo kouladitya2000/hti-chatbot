@@ -159,8 +159,9 @@ try:
     {question} will be replaced with the user's question.
         """
 
-    # Display the image in the sidebar with a width of 200 pixels
-    st.sidebar.image(os.path.join('images', 'hsbc.png'), width=200)
+# Display the image in the sidebar with a width of 200 pixels and adjust the position
+    st.sidebar.image(os.path.join('images', 'hsbc.png'), width=200, use_container_width=False, style="margin-top: 0px;")
+
 
 
 
